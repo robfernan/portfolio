@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Remove @apply for custom colors. Use theme classes in JSX instead. */
