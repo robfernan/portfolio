@@ -9,6 +9,7 @@ import Streaming from './Streaming';
 import Blog from './Blog';
 import AviationProApp from './aviationpro/AviationProApp';
 import Footer from './Footer';
+import UIDemo from './UIDemo';
 
 export default function App() {
 	return (
@@ -81,6 +82,7 @@ function AppWithDynamicName() {
 									<Link to="/aviationpro" className="text-theme-secondary dark:text-theme-secondary-dark hover:underline">Aviation</Link>
 									<Link to="/streaming" className="text-theme-secondary dark:text-theme-secondary-dark hover:underline">Streaming</Link>
 									<Link to="/blog" className="text-theme-secondary dark:text-theme-secondary-dark hover:underline">Blog</Link>
+									<Link to="/ui" className="text-theme-secondary dark:text-theme-secondary-dark hover:underline">UI</Link>
 								</div>
 								<div className="flex items-center space-x-2">
 									{themes.map(t => (
@@ -116,6 +118,7 @@ function AppWithDynamicName() {
 									<Route path="/aviationpro/*" element={<AviationProApp darkMode={darkMode} toggleDarkMode={toggleDarkMode} />} />
 									<Route path="/streaming" element={<Streaming />} />
 									<Route path="/blog" element={<Blog />} />
+									<Route path="/ui" element={<UIDemo />} />
 								</Routes>
 							</main>
 							<Footer theme={theme} />
