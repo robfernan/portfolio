@@ -1,8 +1,12 @@
 import React from 'react';
+import Layout from './components/layout/Layout';
+import { Card, Button } from './components/ui';
+import { Link } from 'react-router-dom';
 
 export default function PortfolioHome() {
   return (
-    <section className="max-w-5xl mx-auto py-16 px-4 bg-theme-bg dark:bg-theme-bg-dark transition-colors duration-300">
+    <Layout>
+      <section className="max-w-5xl mx-auto py-16 px-4">
       {/* Hero/About Section */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-12">
         <div className="md:col-span-2">
@@ -17,13 +21,17 @@ export default function PortfolioHome() {
 
           {/* Featured Work Card inserted here so it appears directly after the intro */}
           <div className="mt-4 grid grid-cols-1 gap-6">
-            <div className="p-6 bg-theme-card dark:bg-theme-card-dark rounded-xl shadow-lg flex flex-col justify-between transition-colors duration-300">
-              <div>
-                <h3 className="text-xl font-bold mb-2 text-theme-primary dark:text-theme-primary-dark">AviationPro</h3>
-                <p className="mb-4 text-theme-secondary dark:text-theme-secondary-dark">A professional-grade flight planning suite for pilots and enthusiasts.</p>
+            <Card>
+              <div className="flex flex-col justify-between">
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-theme-primary dark:text-theme-primary-dark">AviationPro</h3>
+                  <p className="mb-4 text-theme-secondary dark:text-theme-secondary-dark">A professional-grade flight planning suite for pilots and enthusiasts.</p>
+                </div>
+                <div>
+                  <Link to="/aviationpro"><Button variant="accent">View AviationPro</Button></Link>
+                </div>
               </div>
-              <a href="/aviationpro" className="inline-block px-4 py-2 bg-theme-action dark:bg-theme-action-dark text-white rounded hover:bg-theme-secondary dark:hover:bg-theme-secondary-dark transition-colors duration-300">View AviationPro</a>
-            </div>
+            </Card>
           </div>
         </div>
 
@@ -284,6 +292,7 @@ export default function PortfolioHome() {
           </li>
         </ol>
       </div>
-    </section>
+      </section>
+    </Layout>
   );
 }
