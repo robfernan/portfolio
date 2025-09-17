@@ -2,6 +2,21 @@
 
 This repository contains a personal portfolio website and related project sources maintained by Robert Fernandez. The site showcases game development, tools, and projects built with frameworks like SFML, Love2D, and modern web tooling. It also contains a nested project, `src/aviationpro`, which is an airplane utility app included as a regular directory.
 
+## Main Pages & Features
+
+- **PortfolioHome** (Home Page):
+  - Landing page with about, skills, featured work, and a detailed timeline of my journey and achievements.
+- **Projects**:
+  - Showcases a collection of my software, games, and creative coding projects.
+- **Art**:
+  - Gallery of digital art, game art, and creative works.
+- **AviationPro** (Aviation):
+  - Dedicated section for my all-in-one pilot app, AviationPro, with features, screenshots, and details.
+- **Streaming**:
+  - Information and links about my Twitch and YouTube channels, including streaming highlights and content focus.
+- **Blog** (optional):
+  - [Currently undecided] — May be used for devlogs, tutorials, or personal posts in the future.
+
 ## What this repo is for
 
 - Host a living snapshot of Robert's portfolio website and project assets.
